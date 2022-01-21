@@ -60,5 +60,18 @@ INSERT INTO pets(id,name,birth_date,type_id,owner_id) VALUES (13, 'Sly', '2012-0
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (1, 7, '2013-01-01', 'rabies shot');
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (2, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (3, 8, '2013-01-03', 'neutered');
-INSERT INTO visits(id,pet_id,visit_date,description) VALUES (4, 7, '2013-01-04', 'spayed');
+
+
+
+
+
+INSERT INTO cares(id,name,description,types_id) VALUES (1,'Hair brushing', 'We will brush the hair of your pet.',2);
+INSERT INTO cares(id,name,description,types_id) VALUES (1,'Hair brushing', 'We will brush the hair of your pet.',1);
+INSERT INTO cares(id,name,description,types_id) VALUES (2,'Chemical flea removal','We will apply strong chemical products in the hair of your pet to remove any kind of flea or insect present.',2);
+INSERT INTO cares(id,name,description,types_id) VALUES (2,'Chemical flea removal','We will apply strong chemical products in the hair of your pet to remove any kind of flea or insect present.',1);
+
+INSERT INTO care_provision(id,visit_id,duration,care_id) VALUES (1,1,0.5,2);
+INSERT INTO care_provision(id,visit_id,duration,care_id) VALUES (2,2,0.25,1);
+
+
 
